@@ -210,10 +210,10 @@ body {
 
   .footer {
     position: relative;
-    top: 100px;
+    top: 30%;
     text-align: center;
     padding: 0 100px;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
   }
 
   .icons {
@@ -221,6 +221,5 @@ body {
     z-index: 3;
     top: 5px;
     margin-top: 50px;
-    margin-bottom: 100px;
   }
 }
