@@ -32,7 +32,7 @@ body {
 }
 
 .bg-desktop {
-  width: 90%;
+  width: 100%;
   height: inherit;
 
 }
@@ -62,13 +62,13 @@ body {
 
 .illustration {
   position: relative;
-  width: 89%;
-  height: 95%;
+  width: 93%;
+  height: inherit;
 }
 
 /* Description Container */
 .description {
-  width: 40%;
+  width: 45%;
   margin: 20px 10px;
   position: relative;
   bottom: 120px;
