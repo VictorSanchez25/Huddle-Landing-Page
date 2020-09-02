@@ -25,45 +25,43 @@ body {
 .background {
   height: 100%;
   width: 100%;
-  position: absolute;
-  padding: 0;
-  margin: 0;
   background-position: center;
   background-size: cover;
+  z-index: -2;
 
 }
 
 .bg-desktop {
   width: 90%;
   height: inherit;
-  z-index: 0;
+
 }
 .bg-mobile {
   display: none;
 }
 
-
-
 .logo {
   width: 180px;
   height: auto;
   position: absolute;
-  top: 50px;
+  top:  50px;
   left: 100px;
 }
 
 .body-container {
-
   position: absolute;
   top: 110px;
   padding: 50px 100px;
   display: flex;
   flex-flow: nowrap;
+  align-items: flex-end;
+  justify-content: space-between;
 
 }
 /* Illustration Container */
 
 .illustration {
+  position: relative;
   width: 89%;
   height: 95%;
 }
@@ -73,6 +71,7 @@ body {
   width: 40%;
   margin: 20px 10px;
   position: relative;
+  bottom: 120px;
   right: 50px;
 
 }
@@ -112,19 +111,12 @@ body {
   cursor: pointer;
 }
 
-/* Footer */
-
-.attribution {
-  position: absolute;
-  bottom: 10px;
-  right: 38%;
-
-}
 .icons {
   position: absolute;
-  bottom: 40px;
-  right: 100px;
+  bottom: 8%;
+  right: 3%;
 }
+
 .fab {
     border-radius: 60px;
     box-shadow: 0 0 2px white;
@@ -136,22 +128,32 @@ body {
   cursor: pointer;
 }
 
+.footer {
+  position: absolute;
+  bottom: 5%;
+  text-align: center;
+}
 @media (max-width: 1440px) {
 
-  .main-container {
-    width: 80%;
+  .body-container {
+    width: 100%;
   }
 }
 
 @media (max-width: 800px) {
 
   html, body {
-    margin-left: 20px;
-    margin-right: 60px;
     font-size: 14px;
     align-items: center;
     justify-content: center;
   }
+
+  .background {
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+  }
+
 
   .bg-mobile {
     display: block;
@@ -172,10 +174,9 @@ body {
   .body-container {
     position: absolute;
     top: 70px;
-    padding: 35px;
+    padding: 30px;
     display: flex;
-    flex-flow: column;
-    justify-content: center;
+    flex-flow:   column nowrap;
     align-items: center;
   }
 
@@ -188,6 +189,7 @@ body {
     width: 90%;
     margin: 0;
     position: relative;
+    top: 10px;
     right: 0;
   }
   .header {
@@ -197,7 +199,6 @@ body {
     line-height: 2rem;
     margin-top: 10px;
   }
-
   .sentence {
     font-family: 'Open Sans', sans-serif;
     font-size: 1rem;
@@ -207,32 +208,18 @@ body {
     font-stretch: expanded;
 }
 
-
-.attribution {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 10px;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 0 50px;
-}
-
-.icons {
-      align-items: center;
-      text-align: center;
-      margin: auto;
-      position: absolute;
-      right: 0;
-      left: 0%;
-      bottom: 7%;
-    }
-.fab {
-      border-radius: 60px;
-      box-shadow: 0 0 2px white;
-      padding: 0.5rem 0.6rem;
-      margin-left: 15px;
+  .footer {
+    position: relative;
+    top: 30px;
+    text-align: center;
+    padding: 0 100px;
+    margin-bottom: 30px;
   }
 
+  .icons {
+    position: relative;
+    z-index: 3;
+    top: 5px;
+    margin-top: 50px;
+  }
 }
