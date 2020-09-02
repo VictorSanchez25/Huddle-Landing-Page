@@ -53,6 +53,7 @@ body {
 }
 
 .body-container {
+
   position: absolute;
   top: 110px;
   padding: 50px 100px;
@@ -86,15 +87,15 @@ body {
 
 .sentence {
   font-family: 'Open Sans', sans-serif;
-  font-size: 1.12rem;
+  font-size: 1.1rem;
   margin-top: 20px;
   text-align: justify;
   font-weight: 400;
-  font-stretch: expanded;
+  line-height: 1.8rem;
 
 }
 .btn {
-  margin-top: 30px;
+  margin-top: 20px;
   color: 	#674baf;
   font-size: 1.2rem;
   font-weight: 400;
@@ -115,8 +116,9 @@ body {
 
 .attribution {
   position: absolute;
-  bottom: 20px;
+  bottom: 10px;
   right: 38%;
+
 }
 .icons {
   position: absolute;
@@ -169,7 +171,7 @@ body {
   }
   .body-container {
     position: absolute;
-    top: 80px;
+    top: 70px;
     padding: 35px;
     display: flex;
     flex-flow: column;
@@ -205,15 +207,16 @@ body {
     font-stretch: expanded;
 }
 
+
 .attribution {
-  position:absolute;
+  position: absolute;
+  left: 0;
   right: 0;
-  bottom: 5%;
-  left: 0%;
-  z-index: 3;
+  bottom: 10px;
+  justify-content: center;
   align-items: center;
   text-align: center;
-  margin: auto;
+  padding: 0 50px;
 }
 
 .icons {
@@ -222,8 +225,8 @@ body {
       margin: auto;
       position: absolute;
       right: 0;
-      bottom: 15%;
       left: 0%;
+      bottom: 7%;
     }
 .fab {
       border-radius: 60px;
