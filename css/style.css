@@ -13,7 +13,7 @@ html {
 
 body {
   background-image: url("https://github.com/VictorSanchez25/Huddle-Landing-Page/blob/master/images/bg-desktop.svg");
-    background-position: center;
+   background-position: center;
   background-size: cover;
   height: 100%;
   width: 100%;
@@ -34,11 +34,6 @@ body {
 
 }
 
-.bg-desktop {
-  width: 90%;
-  height: inherit;
-
-}
 .bg-mobile {
   display: none;
 }
