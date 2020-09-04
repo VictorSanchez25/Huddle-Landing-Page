@@ -187,6 +187,7 @@ body {
   height: 40px;
 }
 .icons {
+  width: 100%;
   text-align: center;
   position: static;
   margin-top: 50px;
